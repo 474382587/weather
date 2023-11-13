@@ -15,7 +15,7 @@ export interface WeatherResponseDTO {
   list: Forecast[];
 }
 
-const API_KEY = "215022a8c6b45dcd36b354ca06acc261";
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 
 export const fetchRealTimeWeather = async (city: string) => {
